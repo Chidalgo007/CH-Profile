@@ -7,14 +7,15 @@ const mobile = window.matchMedia("(max-width: 768px)");
 
 export const Nav = () => {
 	const [menuClicked, setMenuClicked] = useState(false);
+	const handleClick = ()=>{
+		setMenuClicked(prev=>!prev )
+	}
 
 	return (
 		<div className="fixed flex items-center justify-end w-full z-20 px-10">
 
 			{/*------------------ menu button ----------------------*/}
-			<div className="flex flex-col absolute top-5 right-10 gap-1 z-20" onClick={() => {
-				setMenuClicked(!menuClicked)
-			}}>
+			<div className="flex flex-col absolute top-5 right-10 gap-1 z-20" onClick={() => {handleClick()}}>
 				<motion.div className="w-6 h-1 rounded bg-blue-950"
 				            animate={{
 					            rotate: menuClicked ? 45 : 0,
@@ -44,6 +45,7 @@ export const Nav = () => {
 							<a
 								href={value.href}
 								key={index}
+								onClick={() => {handleClick()}}
 								className="font-bold text-xl">
 								{value.title}
 							</a>
@@ -55,7 +57,7 @@ export const Nav = () => {
 				{/*---------------- social media links ----------------*/}
 				<div className="w-full flex flex-col justify-center items-center">
 					<span className="w-3/5 border border-blue-950 mt-5"/>
-					<div className="flex mt-7">
+					<div className="flex mt-7 mb-3">
 						{socialLinks.map((value, index) => (
 							// <div className="w-20 h-15 ml-4 border border-red-500">
 							<a href={value.href} key={index} target="_blank"
