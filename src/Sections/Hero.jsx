@@ -16,7 +16,7 @@ export const Hero = () => {
 			</div>
 
 			{/*----------------- button -----------------*/}
-			<button className="w-fit px-4 btn z-20">
+			<button className="w-fit px-4 btn z-10">
 				<a href="#contact" className="">Contact me</a>
 			</button>
 		</div>
