@@ -85,7 +85,7 @@ export const Projects = () => {
 	}
 
 	return (
-		<div id="projects" className={`w-full h-screen flex flex-col ${screenHeight <= 670 ? "justify-start" : "justify-center"}  items-center overflow-hidden z-20`}>
+		<div id="projects" className={`relative w-full h-screen flex flex-col ${screenHeight <= 670 ? "justify-start" : "justify-center"}  items-center overflow-y-visible z-20`}>
 			<div
 				ref={parentRef}
 				className={`relative w-7/8 flex ${screenHeight <= 670 ? "mt-20" : "mt-0"} items-center h-3/5`}
@@ -95,34 +95,39 @@ export const Projects = () => {
 
 				{projects.map((value, i) => {
 					return (
-						<motion.div key={i} className={`absolute flex flex-col
-						xl:w-[240px] w-[200px] shadow-xl shadow-gray-500 py-5 px-2 rounded-2xl h-[390px] overflow-hidden`}
+						<motion.div key={i} className={`absolute border-2 border-blue-950 flex flex-col
+						w-[240px] shadow-xl shadow-gray-500 py-5 px-2 rounded-2xl h-[390px] overflow-y-visible z-10`}
 						            style={{
 							            background: "radial-gradient(circle, #ffee8c 50%, #ff9b00 100%)",
-							            left: `${i * (screenWidth / projects.length - (screenWidth < 600 ? 26 : 18))}px`,
-							            zIndex: i < projects.length / 2 ? 10 + i : 10 - i,
-							            transform: `scale(${i <= Math.ceil((projects.length / 2) - 1) ? 1 + 0.1 * i : 1 + 0.1 * Math.abs(i - (projects.length - 1))})`
+										transformOrigin: "center center",
+										left: "50%",
+										transform: `translateX(-50%) translateX(${(i - Math.floor(projects.length / 2)) * 250}px)`,
+										// zIndex: i < projects.length / 2 ? 10 + i : 10 - i,
 						            }}
-						            whileHover={{scale: 1.3}}
+						            whileHover={{boxShadow: "0px 0px 20px #ff9b00"}}
 						            transition={{duration: 0.4, ease: "easeInOut"}}
 						>
+							<a key={i} href={value.href} target="_blank" rel="noreferrer">
 							<p className="font-bold text-center uppercase">{value.title}</p>
 							<img src={value.logo} alt="logo"
 							     className=" w-full h-[70%] object-cover rounded-2xl shadow shadow-gray-500"/>
 							<p className="py-4 text-xs">{value.description}</p>
 							<HoverEffect href={value.href} text={'Check it out'}/>
+							</a>
 						</motion.div>
+
 					)
 				})}
-			</div>
-			<div className="md:flex hidden w-full mb-10 px-10 items-end justify-between z-20">
-				<button className="hover:text-indigo-600 transition-colors"
-				        onClick={prevProject}>
-					⬅ Previous
-				</button>
-				<button className="hover:text-indigo-600 transition-colors"
-				        onClick={nextProject}>
-					Next ➡
+			<button className ="absolute bg-gray-700/50 rounded-r-2xl xl:left-[-120px] left-[-80px] h-[400px] w-[100px] px-4 z-20 flex items-center justify-center" onClick={prevProject}>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" className="h-full w-auto fill-white">
+					<polygon points="16,4 8,24 16,44"/>
+				</svg>
+			</button>
+				<button className="absolute bg-gray-700/50 rounded-l-2xl xl:right-[-120px] right-[-80px] h-[400px] w-[100px] px-4 z-20 flex items-center justify-center"
+						onClick={nextProject}>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 48" className="h-full w-auto fill-white">
+						<polygon points="8,4 16,24 8,44"/>
+					</svg>
 				</button>
 			</div>
 		</div>

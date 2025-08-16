@@ -12,7 +12,7 @@ export const Nav = () => {
 	}
 
 	return (
-		<div className="fixed flex items-center justify-end w-full z-20 px-10">
+		<div className="fixed flex items-center justify-end w-full z-40 px-10">
 
 			{/*------------------ menu button ----------------------*/}
 			<div className="flex flex-col absolute top-5 right-10 gap-1 z-20" onClick={() => {handleClick()}}>

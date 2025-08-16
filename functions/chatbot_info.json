@@ -1,0 +1,103 @@
+{
+  "about_me": "I am Christian, a developer specializing in web and mobile app, using serverless architecture with Firebase Functions",
+  "this_website": "<a href='https://chrishg.net'>https://chrishg.net</a>",
+  "contact_email": "<mailto:contact@chrishg.net>contact@chrishg.net </mailto>",
+  "more_info": "<a href='https://github.com/Chidalgo007'>https://github.com/Chidalgo007</a>",
+  "skills": {
+    "frontend": ["React", "React.js", "HTML/CSS", "JavaScript"],
+    "backend": ["Node.js", "Firebase Functions", "Python"],
+    "mobile": ["React Native", "Kotlin"],
+    "databases": ["Firebase", "Apache Derby", "AWS RDB"]
+  },
+
+  "experience": {
+    "years": "2 years of development experience",
+    "specialties": ["Serverless architecture", "Real-time applications", "AI integration", "Automation"],
+    "industries": ["Transportation", "Food tech", "E-commerce", "Gaming"]
+  },
+
+  "projects": {
+      "Web File Automation": {
+        "description": "A program to login and automatically download and upload files.",
+        "tech_stack": ["Javascript", "Electron","Python","Node.js"],
+        "status": "Live",
+        "url": "<a href='https://chrishg.net/humby-Auto'>https://chrishg.net/humby-Auto</a>"
+      },
+      "Excel Automation": {
+        "description": "Automated Excel file processing with Python, including data extraction and manipulation.",
+        "tech_stack": ["Python", "win32com", "Openpyxl"],
+        "status": "Live",
+        "url": "<a href='https://chrishg.net//excel-Auto'>https://chrishg.net//excel-Auto</a>"
+      },
+      "LogIn":{
+        "description": "Secure login with Google authentication, email validation, and password recovery.",
+        "tech_stack": ["React.js", "Firebase", "Node.js", "CSS3"],
+        "href": "<a href='https://login.chrishg1.com'>https://login.chrishg1.com</a>",
+        "status": "Live"
+      },
+      "MealMaestro": {
+        "description": "AI-powered meal planner with personalized recipes and seamless meal organization.",
+        "tech_stack": ["Kotlin", "Firebase", "AI/ML APIs"],
+        "status": "Complete",
+        "features": ["Personalized recipes", "Seamless meal organization", "AI/ML integration"],
+        "url": "<a href='https://github.com/Chidalgo007/MealMaestro'>https://github.com/Chidalgo007/MealMaestro</a>"
+      },
+      "Camping Shop": {
+        "description": "A 3D scene shop with interactive animations.",
+        "tech_stack": ["Three.js", "React", "WebGL", "CSS3"],
+        "status": "Live",
+        "url": "<a href='https://camping.chrishg1.com'>https://camping.chrishg1.com</a>"
+      },
+      "Shooting Game": {
+        "description": "Fast-paced space shooter with increasing difficulty and real-time health tracking.",
+        "tech_stack": ["JavaScript", "HTML5 Canvas", "CSS3"],
+        "status": "Complete",
+        "url": "<a href='https://github.com/Chidalgo007/ShootingGame'>https://github.com/Chidalgo007/ShootingGame</a>"
+      },
+      "Calorie Tracker": {
+        "description": "Track your daily intake with secure login, meal logging, and insightful analytics.",
+        "tech_stack": ["Java", "Apache Derby", "REST APIs", "JWT Authentication"],
+        "status": "Complete",
+        "features": ["Secure authentication", "Data analytics", "API integration"],
+        "url": "<a href='https://github.com/Chidalgo007/calorieCountGUI'>https://github.com/Chidalgo007/calorieCountGUI </a>"
+      }
+  },
+
+  "services": {
+    "web_development": "Custom web applications with modern frameworks",
+    "mobile_apps": "Cross-platform mobile development",
+    "ai_integration": "Chatbots and AI-powered features",
+    "automation": "Automation and scheduling",
+    "consulting": "Technical architecture and code reviews"
+  },
+
+  "work_preferences": {
+    "remote": true,
+    "project_types": ["Web apps", "Mobile apps", "AI integration", "Automation"],
+    "duration": "Both short-term and long-term projects",
+    "budget_range": "Discuss based on project scope"
+  },
+
+  "education": {
+    "Auckland University of Technology":"(2023 - 2025) Auckland, New Zealand.Bachelor of Computer and Information Sciences (Double Major: Software Development & Data Science)",
+    "North Tec Tai Tokerau Wānanga": "(2022 - 2022) Auckland, New Zealand. New Zealand Certificate in Information Technology Essentials (Level 4)",
+    "University Pedro de Valdivia": "(2002 - 2007) Santiago, Chile. Bachelor of Science in Business Administration"
+  },
+
+  "faq": {
+    "response_time": "I typically respond to inquiries within 24 hours",
+    "timezone": "New Zealand Standard Time (NZST)",
+    "languages": "Spanish (native), English (fluent)",
+    "payment": "Accepted paypal payments",
+    "find project": "visit https://github.com/Chidalgo007/ to see this page and more projects.",
+    "availability": "I'm currently available for remote work. You can contact me via email at contact@chrishg.net.",
+    "location": "I'm based in the Auckland, New Zealand.",
+    "contact": "You can reach me at contact@chrishg.net or at the contact form on this website."
+  },
+
+  "personal_interests": {
+    "enjoys": "Gaming, hiking around Auckland, experimenting with new web technologies and learning new things",
+    "currently_learning": "Advanced AI integration and mobile app optimization",
+    "fun_fact": "Built my first game using JavaScript canvas - which led to my passion for interactive web experiences"
+  }
+}

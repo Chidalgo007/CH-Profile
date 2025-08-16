@@ -29,16 +29,11 @@ export const Skills = () => {
 						initial={{opacity: 0}}
 						animate={{opacity: isInView ? 1 : 0, transition: {duration: 1.8, ease: "easeInOut"}}}
 					>
-						I'm a computer science enthusiast passionate about turning ideas into reality through code.
-						I
-						specialize in creating meaningful solutions, from sleek mobile apps to visually striking
-						websites with 3D elements. Currently, I'm diving deep into 3D modeling and interactive web
-						design using Three.js and React. I thrive in collaborative environments where creativity
-						flows,
-						and I love tackling complex challenges to build engaging user experiences. Outside of work,
-						you’ll find me at the gym or enjoying a good movie with my wife. Let's build something
-						amazing
-						together!
+						I'm a software developer passionate about turning ideas into real, functional applications.
+						I specialize in building meaningful solutions, from intuitive mobile apps to robust desktop software with polished interfaces.
+						Currently, I’m exploring cross-platform development and interactive user experiences using modern frameworks and tools.
+						I thrive in collaborative environments where innovation and creativity drive results, and I enjoy tackling complex problems to deliver engaging, high-quality applications.
+						Outside of coding, you’ll find me at the gym or unwinding with a good movie. Let’s create something impactful together!
 					</motion.p>
 				</div>
 			</div>

@@ -39,7 +39,7 @@ export const projectLinks = [
 	{
 		title: 'Calorie Tracker',
 		description: 'Track your daily intake with secure login, meal logging, and insightful analytics. Features API integration and Apache Derby storage.',
-		href: 'https://github.com/Chidalgo007/calorieCountGUI?tab=readme-ov-file',
+		href: 'https://github.com/Chidalgo007/calorieCountGUI',
 		logo: '/img/projects/project-logo1.png',
 	},
 	{
@@ -49,36 +49,36 @@ export const projectLinks = [
 		logo: '/img/projects/project-logo6.png',
 	},
 	{
-		title: 'Shooting Game',
-		description: 'Fast-paced space shooter with increasing difficulty and real-time health tracking.',
-		href: 'https://github.com/Chidalgo007/ShootingGame',
-		logo: '/img/projects/project-logo2.png',
-	},
-	{
 		title: "Log In",
 		description: "Secure login with Google authentication, email validation, and password recovery.",
 		href: "https://login.chrishg1.com",
 		logo: "/img/projects/loginLogo.png",
 	},
 	{
+		title: 'Web File Automation',
+		description: 'Program to login and automatically download and upload files.',
+		href: '/humby-Auto',
+		logo: '/img/projects/nestle1.png',
+	},
+	{
+		title: 'Excel Automation',
+		description: 'Automated Excel file processing with Python, including data extraction and manipulation.',
+		href: "/excel-Auto",
+		logo: '/img/projects/nestle2.png',
+	},
+		{
+		title: 'Shooting Game',
+		description: 'Fast-paced space shooter with increasing difficulty and real-time health tracking.',
+		href: 'https://github.com/Chidalgo007/ShootingGame',
+		logo: '/img/projects/project-logo2.png',
+	},
+		{
 		title: 'MealMaestro',
 		description: 'AI-powered meal planner with personalized recipes and seamless meal organization.',
 
 		href: 'https://github.com/Chidalgo007/MealMaestro',
 		logo: '/img/projects/project-logo3.png',
-	},
-	{
-		title: 'Xora Page',
-		description: 'Minimalist design with smooth GSAP animations, fully responsive.',
-		href: 'https://xora.chrishg1.com/',
-		logo: '/img/projects/xora.png',
-	},
-	{
-		title: 'Zentry Page',
-		description: 'Immersive page with dynamic videos, scroll animations, and tilt effects.',
-		href: 'https://zentry.chrishg1.com/',
-		logo: '/img/projects/zentry.webp',
-	},
+	}
 ]
 
 export const skills = [
@@ -104,6 +104,7 @@ export const skills = [
 			'img/skills/Python.svg',
 			'img/skills/R.svg',
 			'img/skills/MySQL.svg',
+			'img/skills/c.svg'
 		],
 		level: '65'
 	},
